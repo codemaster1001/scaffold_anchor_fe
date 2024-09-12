@@ -187,7 +187,7 @@ async function createTransaction({
   const messageLegacy = new TransactionMessage({
     payerKey: publicKey,
     recentBlockhash: latestBlockhash.blockhash,
-    instructions,
+    instructions
   }).compileToLegacyMessage();
 
   // Create a new VersionedTransaction which supports legacy and v0
